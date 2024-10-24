@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputType>Library</OutputType>
+    <AssemblyName>ConMaster.Plugins.Test</AssemblyName>
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Deepslate\Deepslate.csproj" />
+    <ProjectReference Include="..\Server\Network.csproj">
+      <!--
+      <Private>false</Private>
+      <ExcludeAssets>runtime</ExcludeAssets>
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>-->
+    </ProjectReference>
+  </ItemGroup>  
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="cd $(OutDir)&#xD;&#xA;dir" />
+  </Target>
+</Project>

@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "DeepslateLauncher": {
+      "commandName": "Project",
+      "workingDirectory": "C:\\Users\\samde\\source\\repos\\BedrockServer\\working_dir",
+      "hotReloadEnabled": false
+    }
+  }
+}
