@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.1.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Libraries\Base\Base.csproj" />
+    <ProjectReference Include="..\..\Libraries\Buffer\Buffers.csproj" />
+    <ProjectReference Include="..\..\Libraries\Deepslate\Deepslate.csproj" />
+    <ProjectReference Include="..\..\Libraries\Network\Network.csproj" />
+    <ProjectReference Include="..\..\Libraries\Protocol\Protocol.csproj" />
+    <ProjectReference Include="..\..\Libraries\Raknet\RakNet.csproj" />
+  </ItemGroup>
+</Project>

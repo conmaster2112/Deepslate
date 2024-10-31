@@ -1,5 +1,5 @@
 {
-    "plugins":[
-        "C:\\Users\\samde\\source\\repos\\BedrockServer\\GeneralPlugin\\bin\\Debug\\net8.0\\ConMaster.Plugins.Test.dll"
-    ]
+  "plugins": [
+    "C:\\Users\\samde\\source\\repos\\BedrockServer\\Tests\\GeneralPlugin\\bin\\Debug\\net8.0\\ConMaster.Plugins.Test.dll"
+  ]
 }

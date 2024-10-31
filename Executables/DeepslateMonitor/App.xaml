@@ -1,0 +1,16 @@
+﻿<Application x:Class="DeepslateMonitor.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:DeepslateMonitor"
+             StartupUri="MainWindow.xaml"
+             xmlns:mica="clr-namespace:MicaWPF.Lite.Styles;assembly=MicaWPF.Lite">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <mica:ThemeDictionary DesignModeTheme="Dark" Theme="Auto">
+                </mica:ThemeDictionary>
+                <mica:ControlsDictionary/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

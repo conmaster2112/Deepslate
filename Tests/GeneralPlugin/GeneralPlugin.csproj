@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputType>Library</OutputType>
+    <AssemblyName>ConMaster.Plugins.Test</AssemblyName>
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>  
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="cd $(OutDir)&#xD;&#xA;dir" />
+  </Target>  
+  <ItemGroup>
+    <ProjectReference Include="..\..\Libraries\Deepslate\Deepslate.csproj" />
+  </ItemGroup>
+</Project>
