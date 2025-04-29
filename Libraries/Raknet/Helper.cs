@@ -22,7 +22,7 @@ namespace ConMaster.Raknet
         {
             buffer[2] = (byte)value;
             buffer[1] = (byte)(value >> 8);
-            buffer[1] = (byte)(value >> 16);
+            buffer[0] = (byte)(value >> 16);
             return 3;
         }
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
